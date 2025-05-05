@@ -1,0 +1,320 @@
+ html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: #000000;
+    background-color:#f7f3f5;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #050005;
+  }
+  
+  h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  
+  header, footer {
+    background-color: #74b2f5;
+    color: #0f0f0f;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #67a1e2;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #ca1ac1;
+    color: #fff;
+  }
+  
+  .navbar a:focus {
+    outline: 2px solid #178ddb;
+  }
+  
+  .navbar a.active {
+    background-color: #61b0e6;
+    color: #fff;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Desktop (default) */
+  @media screen and (min-width: 1024px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .navbar ul {
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet */
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .navbar ul {
+      justify-content: center;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navbar a {
+      margin: 0.25rem 0;
+      width: 100%;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+    .main-content {
+      padding: 1rem;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  .main-content {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  header img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  /* Interactive Elements */
+  .navbar a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button, .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #21d330;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #e68b03;
+  }
+  
+  /* Additional Components */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bus ticket specific styles */
+  .ticket-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .form-group input, 
+  .form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  /* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 280px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desc {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+  
+  /* Live tracking page */
+  .map-container {
+    height: 400px;
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    position: relative;
+  }
+  
+  /* Loyalty program */
+  .benefits-list {
+    list-style-position: inside;
+    margin: 1.5rem 0;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    max-width: 600px;
+    margin: 3 auto;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .social-media {
+    text-align: center;
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #005fa3;
+}

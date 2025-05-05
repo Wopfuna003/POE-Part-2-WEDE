@@ -1,0 +1,121 @@
+<Doctype html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loyalty Program</title>
+        <img src=images/Picture3.png alt="bus" width="270"><br>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <nav  class="navbar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="bus_ticket.html">Bus Ticket</a>
+                <a href="live_tracking.html">Live Tracking</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>  
+            </ul>
+        </nav>
+        <header>
+            <h1>Loyalty Program</h1>
+            <p>Earn points with every ride and redeem exciting rewards</p>
+        </header>
+        <main>
+            <div class="container">
+                <section class="program-info">
+                    <h2>How it Works</h2>
+                    <p>Our Loyalty Program allows you to earn points for every ride you take on our buses. The more you ride, the more points you collect, and the more rewards you can unlock!</p>
+                </section>
+        
+                <section class="signup">
+                    <h2>Sign in for the Program</h2>
+                    <p>Sign in to start earning points with every ride!</p>
+                    <div class="login-link">
+                         </div>
+                    <form class="signin-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <button type="submit">Join Now</button>
+                    </form>
+                </section>
+
+    <!-- Registration Form Section -->
+    <div class="container">
+        <form action="register" method="POST" id="registerForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="login-link">
+            
+        </div>
+    </div>
+        
+                <section class="loyalty-points">
+                    <h2>Your Loyalty Points</h2>
+                    <p id="points">You currently have 0 points.</p>
+                </section>
+        
+                <section class="rewards">
+                    <h2>Rewards</h2>
+                    <table class="reward-table">
+                        <thead>
+                            <tr>
+                                <th>Reward</th>
+                                <th>Points Required</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Free Ride</td>
+                                <td>100 Points</td>
+                                <td>Get one free bus ride when you reach 100 points!</td>
+                            </tr>
+                            <tr>
+                                <td>Discounted Pass</td>
+                                <td>250 Points</td>
+                                <td>Receive a discounted monthly pass for your next ride.</td>
+                            </tr>
+                            <tr>
+                                <td>Premium Membership</td>
+                                <td>500 Points</td>
+                                <td>Get VIP access, priority seating, and more benefits.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        
+            <footer>
+                <p>Bus Service - Loyalty Program</p>
+            <p> &copy;2025 Salani Bus Service</p>
+        </footer>
+        <script>
+            
+        

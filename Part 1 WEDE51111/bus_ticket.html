@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <img src="images/Picture3.png" alt="bus" width="270">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+      <ul>
+       <a href="index.html">Home</a>
+       <a href="loyalty_program.html">Loyalty Program</a>
+       <a href="live_tracking.html">Live Tracking</a>
+       <a href="gallery.html">Gallery</a>
+       <a href="about_us.html">About Us</a>
+       <a href="contact_us.html">Contact Us</a>
+       </ul>
+    </nav>
+        <form id="booking-form">
+        <h2>Book Your Bus Ticket</h2>
+        <button type="search bar">Search</button><br>
+        <label for="passagers-name">Passagers name</label>
+        <input type="passagers-name" id="passagers-name" name="passangers-name"><br>
+        <label for="contanct number">Contact Number</label>
+        <input type="contact number" id="contact number" name="contact number"><br>
+        <label for="from">From</label>
+        <input type="from" id="from" namee="from"><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination"><br>
+        <label for="Travel date">Travel date:</label>
+        <input type="date" id="Travel date" name="Travel date"><br>
+        <label for="bus type">Bus Type</label>
+        <select id="bus-type" name="bus type">
+            <option value="Air-Conditioner">Air-Conditioner:</option>
+            <option value="No-Air-Conditioner">No-Air-Conditioner</option>
+        </select><br>
+        <label for="seat-number">Seat-number:</label>
+        <input type="seat-number" name="seat-number"><br>
+        <select id="select" name="Select">
+            <option value="adult">Adult</option>
+            <option value="student">Student</option><br>
+            </select>
+            <br>
+            <button type="submit">Book Now</button>
+     </form>
+     <!-- Header Section -->
+    <header>
+        <h1>Bus Service Payment</h1>
+    </header>
+
+    <!-- Payment Form Section -->
+    <div class="container">
+        <form action="payment" method="POST" id="paymentForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="number" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date (MM/YY)</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="" name="amount" placeholder="R0.00" required>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <div class="back-link">
+            <p>Need help? <a href="contact_us.html">Contact us</a></p>
+        </div>
+    </div>
+    <footer>
+        <p> &copy;2025 Salani Bus Service</p>
+    </footer>
+     
+</body>
+</html>
